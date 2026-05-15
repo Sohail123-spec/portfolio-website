@@ -1,0 +1,91 @@
+<!-- =========================
+FILE: contact.html
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Md Sohail Ahmed</title>
+
+  <meta name="description" content="Contact Md Sohail Ahmed through this accessible portfolio contact form." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+  <header>
+    <h1>Contact Me</h1>
+
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in Touch</h2>
+
+      <!-- Accessible Form -->
+      <form aria-label="Contact Form">
+
+        <div>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            aria-required="true"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+          />
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            aria-required="true"
+          ></textarea>
+        </div>
+
+        <button type="submit">
+          Send Message
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Md Sohail Ahmed</p>
+  </footer>
+
+</body>
+</html>
