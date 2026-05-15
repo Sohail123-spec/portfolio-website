@@ -1,89 +1,56 @@
-<!-- =========================
-FILE: index.html
-========================= -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- SEO Meta Tags -->
-  <title>Md Sohail Ahmed | Web Developer Portfolio</title>
-  <meta name="description" content="Official portfolio website of Md Sohail Ahmed - Web Developer, Java Learner, and Tech Enthusiast." />
-  <meta name="keywords" content="Web Developer, Portfolio, HTML5, CSS3, JavaScript, Java, Frontend Developer" />
-  <meta name="author" content="Md Sohail Ahmed" />
+  <title>Sohail's Task Manager</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Md Sohail Ahmed Portfolio" />
-  <meta property="og:description" content="Modern accessible portfolio website built using semantic HTML5." />
-  <meta property="og:type" content="website" />
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Skip Navigation -->
-  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+  <main class="container">
 
-  <!-- Header -->
-  <header role="banner">
-    <h1>Md Sohail Ahmed</h1>
+    <h1>Sohail's To-Do List</h1>
 
-    <!-- Navigation -->
-    <nav aria-label="Main Navigation">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="theme-toggle">
-  <button onclick="toggleTheme()">
-    Toggle Dark Mode
-  </button>
-</div>
-  </header>
+    <!-- Input Section -->
 
-  <!-- Main Content -->
-  <main id="main-content">
+    <div class="todo-input">
 
-    <!-- Hero Section -->
-    <section aria-labelledby="hero-heading">
-      <h2 id="hero-heading">Welcome to My Portfolio</h2>
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter a new task..."
+      />
 
-      <p>
-        I am a passionate web developer focused on creating
-        accessible and modern websites using semantic HTML5.
-      </p>
-    </section>
+      <button id="addTaskBtn">
+        Add Task
+      </button>
 
-    <!-- Skills Section -->
-    <section aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Skills</h2>
+    </div>
 
-      <article>
-        <h3>Frontend Development</h3>
-        <p>HTML5, CSS3, JavaScript, Responsive Design</p>
-      </article>
+    <!-- Filter Buttons -->
 
-      <article>
-        <h3>Programming</h3>
-        <p>Java, Problem Solving, Object-Oriented Programming</p>
-      </article>
-    </section>
+    <div class="filters">
+
+      <button data-filter="all">All</button>
+
+      <button data-filter="active">Active</button>
+
+      <button data-filter="completed">Completed</button>
+
+    </div>
+
+    <!-- Task List -->
+
+    <ul id="taskList"></ul>
 
   </main>
 
-  <!-- Footer -->
-  <footer role="contentinfo">
-    <p>&copy; 2026 Md Sohail Ahmed. All Rights Reserved.</p>
-  </footer>
-<script>
-  function toggleTheme() {
-    document.body.classList.toggle("dark-mode");
-  }
-</script>
+  <script src="script.js"></script>
+
 </body>
 </html>
