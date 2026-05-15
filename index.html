@@ -39,6 +39,11 @@ FILE: index.html
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <div class="theme-toggle">
+  <button onclick="toggleTheme()">
+    Toggle Dark Mode
+  </button>
+</div>
   </header>
 
   <!-- Main Content -->
@@ -75,6 +80,10 @@ FILE: index.html
   <footer role="contentinfo">
     <p>&copy; 2026 Md Sohail Ahmed. All Rights Reserved.</p>
   </footer>
-
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
 </body>
 </html>
